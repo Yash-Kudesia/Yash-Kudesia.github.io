@@ -40,10 +40,18 @@ footer span:hover{
     padding: 10px;
     min-width: 350px;
 }
+
+#work-head{
+    margin:10px;
+    
+}
+
 .git-color{
     color: #ff0707 
 }
-
+.inline li{
+    margin: 20px;
+}
 
 
 /* scrollbar */

@@ -1,5 +1,26 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+nav{
+    height: auto !important;
+}
+.nav-active{
+    font-weight: bolder;
+    font-size: 20px;
+    border-bottom: 5px solid black;
+}
+
 .load-blur{
     display: none;
+}
+.colMargin{
+    margin-bottom: 15px;
 }
 .card-title{
     background-color: rgba(255,255,255,0.6);
@@ -58,8 +79,25 @@ footer span:hover{
 .inline li{
     margin: 20px;
 }
-
-
+.jContent{
+    display: none;
+}
+.jbtn{
+    width: auto;
+    padding: 5px;
+    background-color: white;
+    border-bottom: 2px solid black;
+}
+.jactive{
+    border-bottom: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.jbtn:hover{
+    border-bottom: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
 /* scrollbar */
 
 /* width */

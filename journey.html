@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="black-text white z-depth-5" style="padding-left: 20px;">
+    <nav class="black-text white z-depth-5 load-blur" style="padding-left: 20px;">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo left black-text"><img src="img/logo-small.png" class="responsive-img"
                     alt=""></a>
@@ -52,7 +52,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container load-blur">
         <div class="row black-text">
             <div class="col s12 m8 center">
                 <blockquote>
@@ -68,7 +68,7 @@
 
     </div>
 
-    <footer class="black page-footer">
+    <footer class="black page-footer load-blur">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -85,7 +85,7 @@
                                 <a href="tel:+918433219194">+91 - 8433219194</a>
                             </span>
                         </div>
-                    </div>     
+                    </div>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text"><u>Find More</u></h5>
@@ -102,17 +102,17 @@
         <div class="footer-copyright">
             <div class="container">
                 © 2020 Copyright. All Rights Reserved.
-                
+
             </div>
         </div>
     </footer>
-<script src="js/src.js"></script>
-<script>
-   $(window).on("load", function () {
+    <script src="js/src.js"></script>
+    <script>
+        $(window).on("load", function () {
             $(".loader-wrapper").fadeOut("slow");
-            $("body").css("filter","none");
+            $(".load-blur").fadeIn(1000);
         });
-</script>
+    </script>
 </body>
 
 </html>

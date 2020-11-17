@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <nav class="black-text white z-depth-5" style="padding-left: 20px;">
+    <nav class="black-text white z-depth-5 load-blur" style="padding-left: 20px;">
         <div class="nav-wrapper">
             <a href="index.html" class="brand-logo left black-text"><img src="img/logo-small.png" class="responsive-img"
                     alt=""></a>
@@ -54,7 +54,7 @@
     </div>
 
     
-    <div class="container">
+    <div class="container load-blur">
         <div class="row black-text">
             <div class="col s12 m6 center">
                 <blockquote>
@@ -137,7 +137,7 @@
         </div>
 
     </div>
-    <footer class="black page-footer">
+    <footer class="black page-footer load-blur">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -178,8 +178,9 @@
     <script>
         $(window).on("load", function () {
             $(".loader-wrapper").fadeOut("slow");
-            $("body").css("filter","none");
+            $(".load-blur").fadeIn(1000);
         });
+        
     </script>
 </body>
 

@@ -37,6 +37,23 @@
 
     </nav>
     <br>
+    <div class="loader-wrapper">
+        <div class="preloader-wrapper big active loader">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
     <div class="container">
         <div class="row black-text">
             <div class="col s12 m6 center">
@@ -55,7 +72,7 @@
                 <blockquote>
                     <h3>My Education</h3>
                 </blockquote>
-                <div id = "edu">
+                <div id="edu">
                     <ul>
                         <li>
                             <div class="card-panel orange hoverable">
@@ -66,7 +83,7 @@
                                     <p>Semester : 7th</p>
                                     <p>Indian Institute of Information Technology, Nagpur (MH.)</p>
                                     <p>Year : 2017 - 2021 (Expected)</p>
-        
+
                                 </span>
                             </div>
                         </li>
@@ -93,7 +110,7 @@
                         </li>
                     </ul>
                 </div>
-                
+
             </div>
             <div class="col s12 m6 center">
                 <div class="card hoverable">
@@ -137,7 +154,7 @@
                                 <a href="tel:+918433219194">+91 - 8433219194</a>
                             </span>
                         </div>
-                    </div>     
+                    </div>
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text"><u>Find More</u></h5>
@@ -157,7 +174,13 @@
             </div>
         </div>
     </footer>
-<script src="js/src.js"></script>
+    <script src="js/src.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css("filter","none");
+        });
+    </script>
 </body>
 
 </html>

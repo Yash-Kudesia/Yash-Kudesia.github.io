@@ -37,6 +37,21 @@
 
     </nav>
     <br>
+    <div class="loader-wrapper">
+        <div class="preloader-wrapper big active loader">
+            <div class="spinner-layer spinner-red-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                    <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row black-text">
             <div class="col s12 m8 center">
@@ -92,6 +107,12 @@
         </div>
     </footer>
 <script src="js/src.js"></script>
+<script>
+   $(window).on("load", function () {
+            $(".loader-wrapper").fadeOut("slow");
+            $("body").css("filter","none");
+        });
+</script>
 </body>
 
 </html>

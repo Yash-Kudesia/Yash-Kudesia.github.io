@@ -4,8 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <!--Import Google Icon Font-->
@@ -14,33 +12,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <link rel="stylesheet" href="css/styles.css">
+
     <title>Portfolio</title>
 </head>
 
 <body>
-    <nav class="teal  z-depth-5" style="padding-left: 20px;">
+    <nav class="black-text white z-depth-5" style="padding-left: 20px;">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo left white-text">My Portfolio</a>
+            <a href="index.html" class="brand-logo left black-text"><img src="img/logo-small.png" class="responsive-img"
+                    alt=""></a>
             <ul id="nav-mobile" class="right hide-on-small-only">
-                <li class="hoverItem"><a href="work.html" class="white-text">My Work</a></li>
-                <li class="hoverItem"><a href="contact.html" class="white-text">Contact Me</a></li>
+                <li class="hoverItem"><a href="work.html" class="black-text">My Work</a></li>
+                <li class="hoverItem"><a href="journey.html" class="black-text">My Journey</a></li>
             </ul>
             <div class="show-on-small hide-on-med-and-up">
                 <br>
                 <ul id="nav-mobile" class="center">
                     <li><a href="work.html" class="grey-text btn mainbtn white">My Work</a></li>
-                    <li><a href="contact.html" class="grey-text btn mainbtn white">Contact Me</a></li>
+                    <li><a href="journey.html" class="grey-text btn mainbtn white">My Journey</a></li>
                 </ul>
             </div>
         </div>
-       
+
     </nav>
-<br>
+    <br>
     <div class="container">
         <div class="row black-text">
             <div class="col s12 m6 center">
                 <blockquote>
-                    <h3>Wait! there is a lot to do -- Yash Kudesia</h3>
+                    <h3>Relevant Documents</h3>
                 </blockquote>
 
                 <div>
@@ -50,8 +51,49 @@
                     <a class="waves-effect waves-light btn mainLink hoverItem"
                         href="https://drive.google.com/file/d/1YKBGsflAJLt9YAysrFkyISuADau-vXHT/view?usp=sharing"><i
                             class="material-icons right" target="_blank">visibility</i>Project Profile</a>
-
                 </div>
+                <blockquote>
+                    <h3>My Education</h3>
+                </blockquote>
+                <div id = "edu">
+                    <ul>
+                        <li>
+                            <div class="card-panel orange">
+                                <span class="white-text">
+                                    <h4>Bacherlors of Technology</h4>
+                                    <p><b>Computer Science and Engineering</b></p>
+                                    <p>CGPA : 8.34</p>
+                                    <p>Semester : 7th</p>
+                                    <p>Indian Institute of Information Technology, Nagpur (MH.)</p>
+                                    <p>Year : 2017 - 2021 (Expected)</p>
+        
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-panel red darken-1">
+                                <span class="white-text">
+                                    <h4>Intermediate</h4>
+                                    <p><b>Science Stream</b></p>
+                                    <p>Percentage : 85</p>
+                                    <p>UCH Madhyamik Vidhyalaya, Sikar (Raj.)</p>
+                                    <p>Year : 2015 - 2016</p>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="card-panel blue">
+                                <span class="white-text">
+                                    <h4>Matriculation</h4>
+                                    <p>CGPA : 10</p>
+                                    <p>Florence Nightingale Public School, Budaun (UP)</p>
+                                    <p>Year : 2013 - 2014</p>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
             <div class="col s12 m6 center">
                 <div class="card hoverable">
@@ -70,7 +112,7 @@
                     <div class="card-action">
                         <a href="https://www.linkedin.com/in/yashkudesia/" class="blue-text"
                             target="_blank"><u>Linkedin</u></a>
-                        <a href="https://github.com/Yash-Kudesia" class="black-text" target="_blank"><u>Github</u></a>
+                        <a href="https://github.com/Yash-Kudesia" class="red-text" target="_blank"><u>Github</u></a>
 
                     </div>
                 </div>
@@ -80,10 +122,44 @@
             <hr>
         </div>
     </div>
+    <footer class="black page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text"><u>Portfolio</u></h5>
 
-    <script>
+                    <div class="container">
+                        <div class="row">
+                            <span class="grey-text text-lighten-4"><i class="material-icons shift">mail</i>
+                                yashku2000@gmail.com
+                            </span>
+                        </div>
+                        <div class="row">
+                            <span class="grey-text text-lighten-4"><i class="material-icons shift">phone</i>
+                                +91 - 8433219194
+                            </span>
+                        </div>
+                    </div>     
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text"><u>Find More</u></h5>
+                    <ul class="inline">
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://app.assessfirst.com/_/profile/llouvwfj-yash-kudesia">Soft Skills</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.hackerrank.com/yashku2000">HackerRank</a></li>
 
-    </script>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2020 Copyright. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+<script src="js/src.js"></script>
 </body>
 
 </html>

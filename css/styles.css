@@ -2,53 +2,64 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-  }
+}
 
-  main {
+main {
     flex: 1 0 auto;
-  }
-nav{
+}
+
+nav {
     height: auto !important;
 }
-.nav-active{
+
+.nav-active {
     font-weight: bolder;
     font-size: 20px;
     border-bottom: 5px solid black;
 }
 
-.load-blur{
+.load-blur {
     display: none;
 }
-.colMargin{
+
+.colMargin {
     margin-bottom: 15px;
 }
-.card-title{
-    background-color: rgba(255,255,255,0.6);
+
+.card-title {
+    background-color: rgba(255, 255, 255, 0.6);
     width: -webkit-fill-available;
     font-weight: bold !important;
 }
-.mainLink{
+
+.mainLink {
     margin: 10px;
-    width:200px;
+    width: 200px;
 }
-.mainbtn{
-    width:125px;
+
+.mainbtn {
+    width: 125px;
 }
-footer a{
+
+footer a {
     padding: 10px;
     height: 20px;
 }
-footer a:hover{
+
+footer a:hover {
     border-left: 5px solid white;
 }
-footer span:hover{
+
+footer span:hover {
     border-bottom: 5px solid white;
 }
-.loader{
+
+.loader {
     margin-left: 45vw;
     margin-top: 50vh;
 }
-.loader-wrapper{
+
+.loader-wrapper {
     width: 100%;
     z-index: 1;
     height: 100%;
@@ -57,71 +68,100 @@ footer span:hover{
     top: 0;
 }
 
-#edu{
+#edu {
     overflow-x: auto;
 }
-@media (min-width:600px){
-    #edu{
-        max-width: 380px;
-    }
-}
-#edu ul{
+
+#edu ul {
     display: flex;
 }
-#edu ul li{
+
+#edu ul li {
     padding: 10px;
     min-width: 350px;
 }
 
-.git-color{
-    color: #ff0707 
+.git-color {
+    color: #ff0707
 }
-.inline li{
+
+.inline li {
     margin: 20px;
 }
-.jContent{
+
+.jContent {
     display: none;
 }
-.jbtn{
+
+.jbtn {
     width: auto;
     padding: 5px;
     background-color: white;
     border-bottom: 2px solid black;
 }
-.jactive{
+
+.jactive {
     border-bottom: none;
     font-weight: bolder;
     font-size: 20px;
 }
-.jbtn:hover{
+
+.jbtn:hover {
     border-bottom: none;
     font-weight: bolder;
     font-size: 20px;
 }
+
 /* scrollbar */
 
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey; 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey;
     border-radius: 10px;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: rgb(179, 175, 175); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #8a8989; 
-  }
+}
 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #eeeeee;
+}
 
+#others {
+    font-size: x-large;
+}
 
+@media (min-width:1200px) {
+    .cont2 {
+       width: fit-content;
+    }
+}
+@media (max-width:1199px){
+    .cont2{
+        width: 93%;
+    }
+}
 
+@media (max-width:600px) {
+    .mobile {
+        line-height: 2;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width:450px) {
+    .mobile {
+        line-height: normal;
+        letter-spacing: normal;
+    }
+}

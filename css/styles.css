@@ -3,7 +3,7 @@ body {
     min-height: 100vh;
     flex-direction: column;
     max-width: 1800px;
-    margin: auto;
+    margin: auto !important;
     transition: 0.5s;
 }
 
@@ -17,7 +17,7 @@ nav {
 }
 
 .nav-active {
-    font-weight: bolder;
+    font-weight: 600;
     /* font-size: 20px; */
     /* border-bottom: 5px solid black; */
     transition: 0.5s;
@@ -25,13 +25,24 @@ nav {
 nav li a{
     transition: 0.5s;
 }
-nav li a:hover{
-    font-size: 20px;
+@media(min-width:601px){
+    nav li a:hover{
+        font-size: 20px;
+    }
+}
+@media(max-width:600px){
+    nav li a:hover{
+        font-weight: bolder;
+        color: black !important;
+    }
 }
 .load-blur {
     display: none;
 }
-
+.border{
+    border-bottom: 10px solid teal;
+    border-right: 10px solid;
+}
 .colMargin {
     margin-bottom: 15px;
 }
@@ -148,13 +159,13 @@ footer span:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255);
+    background:grey;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #eeeeee;
+    background: black;
 }
 
 #others {

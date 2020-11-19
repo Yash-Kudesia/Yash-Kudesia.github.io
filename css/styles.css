@@ -2,6 +2,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    max-width: 1800px;
+    margin: auto;
+    transition: 0.5s;
 }
 
 main {
@@ -10,14 +13,21 @@ main {
 
 nav {
     height: auto !important;
+    transition: 0.5s;
 }
 
 .nav-active {
     font-weight: bolder;
-    font-size: 20px;
-    border-bottom: 5px solid black;
+    /* font-size: 20px; */
+    /* border-bottom: 5px solid black; */
+    transition: 0.5s;
 }
-
+nav li a{
+    transition: 0.5s;
+}
+nav li a:hover{
+    font-size: 20px;
+}
 .load-blur {
     display: none;
 }
@@ -44,14 +54,16 @@ nav {
 footer a {
     padding: 10px;
     height: 20px;
+    transition: 0.5s;
 }
 
 footer a:hover {
-    border-left: 5px solid white;
+    /* border-left: 5px solid white; */
+    font-size: 18px;
 }
 
 footer span:hover {
-    border-bottom: 5px solid white;
+    font-size: 18px;
 }
 
 .loader {
@@ -91,6 +103,13 @@ footer span:hover {
 
 .jContent {
     display: none;
+    text-align: center;
+    
+}
+@media (min-width:800px){
+    .jContent{    
+        width: 400px !important;
+    }
 }
 
 .jbtn {
@@ -98,6 +117,7 @@ footer span:hover {
     padding: 5px;
     background-color: white;
     border-bottom: 2px solid black;
+    transition: 0.5s;
 }
 
 .jactive {
@@ -109,8 +129,9 @@ footer span:hover {
 .jbtn:hover {
     border-bottom: none;
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 25px;
 }
+
 
 /* scrollbar */
 

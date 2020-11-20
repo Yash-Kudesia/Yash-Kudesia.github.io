@@ -10,6 +10,31 @@ body {
 main {
     flex: 1 0 auto;
 }
+blockquote{
+   text-decoration: underline;
+}
+.parallax {
+    background-image: url('/img/fullImg.png');
+    background-attachment: fixed;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+.cbackground {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+@media (max-width:600px) {
+    .cbg2 {
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+
+    .zDepth {
+        -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    }
+}
 
 nav {
     height: auto !important;
@@ -22,27 +47,33 @@ nav {
     /* border-bottom: 5px solid black; */
     transition: 0.5s;
 }
-nav li a{
+
+nav li a {
     transition: 0.5s;
 }
-@media(min-width:601px){
-    nav li a:hover{
+
+@media(min-width:601px) {
+    nav li a:hover {
         font-size: 20px;
     }
 }
-@media(max-width:600px){
-    nav li a:hover{
+
+@media(max-width:600px) {
+    nav li a:hover {
         font-weight: bolder;
         color: black !important;
     }
 }
+
 .load-blur {
     display: none;
 }
-.border{
+
+.border {
     border-bottom: 10px solid teal;
     border-right: 10px solid;
 }
+
 .colMargin {
     margin-bottom: 15px;
 }
@@ -115,10 +146,11 @@ footer span:hover {
 .jContent {
     display: none;
     text-align: center;
-    
+
 }
-@media (min-width:800px){
-    .jContent{    
+
+@media (min-width:800px) {
+    .jContent {
         width: 400px !important;
     }
 }
@@ -159,7 +191,7 @@ footer span:hover {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background:grey;
+    background: teal;
     border-radius: 10px;
 }
 
@@ -174,11 +206,12 @@ footer span:hover {
 
 @media (min-width:1200px) {
     .cont2 {
-       width: fit-content;
+        width: fit-content;
     }
 }
-@media (max-width:1199px){
-    .cont2{
+
+@media (max-width:1199px) {
+    .cont2 {
         width: 93%;
     }
 }

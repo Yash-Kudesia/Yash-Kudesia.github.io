@@ -24,10 +24,24 @@ blockquote{
 .cbackground {
     background-color: rgba(255, 255, 255, 0.6);
 }
-
+.card{
+    background-color: unset !important;
+}
+@media (min-width:600px){
+    .col-hover:hover{
+        background:rgb(187 135 7 / 30%)!important;
+        transition-property: background;
+        transition-duration:  1s;
+    }
+}
 @media (max-width:600px) {
     .cbg2 {
-        background-color: rgba(255, 255, 255, 0.6);
+        background-color: rgb(187 135 7 / 60%);
+        color: white;
+        font-weight: 600;
+    }
+    .m-top{
+        margin-top: 220px;
     }
 
     .zDepth {
@@ -51,6 +65,8 @@ nav {
 nav li a {
     transition: 0.5s;
 }
+
+
 
 @media(min-width:601px) {
     nav li a:hover {
@@ -221,12 +237,5 @@ footer span:hover {
         line-height: 2;
         word-spacing: 5px;
         letter-spacing: 2px;
-    }
-}
-
-@media (max-width:450px) {
-    .mobile {
-        line-height: normal;
-        letter-spacing: normal;
     }
 }

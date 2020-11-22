@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -20,10 +20,10 @@
 <body>
     <nav class="black-text white z-depth-5 load-blur" style="padding-left: 20px;">
         <div class="nav-wrapper">
-            <a href="index.html" class="brand-logo left black-text" style="height:60px"><img src="img/logo-small.png"
+            <a href="/index.html" class="brand-logo left black-text" style="height:60px"><img src="/img/logo-small.png"
                     class="responsive-img" alt=""></a>
             <ul id="nav-mobile" class="right">
-                <li class="hoverItem"><a href="work.html" class="black-text nav-active">My Work</a></li>
+                <li class="hoverItem"><a href="/work.html" class="black-text nav-active">My Work</a></li>
             </ul>
         </div>
     </nav>
@@ -44,21 +44,38 @@
             </div>
         </div>
     </div>
-    <div class="container load-blur">
-        <div class="row black-text">
-            <div class="col s12 m8 center">
-                <blockquote>
-                    <h3>Details are not yet here, so checkout the GitHub</h3>
-                    <a class="waves-effect waves-light btn mainLink hoverItem" href="../index.html"><i
-                            class="material-icons right">home</i>Home Page</a>
-                    <a class="waves-effect waves-light btn mainLink hoverItem red" href="https://github.com/Yash-Kudesia">Github</a>
-                </blockquote>
+    <div class="container load-blur black-text " style="width: 100%;padding: 10px;margin-left:auto;margin-right:auto">
+
+        <div class="row cbg2 zDepth">
+            <div class="col s12 m6 center">
+                <div>
+                    <img src="/img/work/yolo.JPG" class="responsive-img" alt="">
+                </div>
             </div>
-            <div class="col s12 m4 center">
-                <img src="../img/oops.png" class="responsive-img">
+            <div class="col s12 m6 center">
+                <div>
+                    <p class="mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae
+                        eius velit consequuntur eaque error, aliquid iste similique impedit, illo neque amet, optio
+                        adipisci nostrum expedita eos delectus odio nesciunt!</p>
+                </div>
             </div>
         </div>
-
+        <div class="row cbg2 zDepth">
+            <div class="col s12 m6 center">
+                <div>
+                    <p class="mobile">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta aperiam asperiores
+                        similique eligendi! Nemo commodi earum illum nostrum fugiat adipisci! Distinctio magnam corrupti
+                        in iure ipsa aliquam, quis nam consectetur!</p>
+                </div>
+            </div>
+            <div class="col s12 m6 center">
+                <div>
+                    <p class="mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt itaque
+                        alias magni nostrum quasi laboriosam minus facilis, labore amet veniam. Cumque, saepe quasi?
+                        Quisquam dolorem est suscipit accusamus perferendis?</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <footer class="black page-footer load-blur">
@@ -100,7 +117,7 @@
     </footer>
     <script src="/js/src.js"></script>
     <script>
-      $(window).on("load", function () {
+        $(window).on("load", function () {
             $(".loader-wrapper").fadeOut("slow");
             $(".load-blur").fadeIn(1000);
         });

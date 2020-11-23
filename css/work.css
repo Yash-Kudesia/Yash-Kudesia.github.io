@@ -1,0 +1,9 @@
+.article-img{
+    border: 2px solid teal;
+    border-radius: 50%;
+}
+main{
+    line-height: 2;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+}

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/work.css">
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
@@ -14,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
-    <title>My Journey</title>
+    <title>Target Detection - My Work</title>
 </head>
 
 <body>
@@ -44,39 +45,48 @@
             </div>
         </div>
     </div>
-    <div class="container load-blur black-text " style="width: 100%;padding: 10px;margin-left:auto;margin-right:auto">
+    <main class="load-blur">
+        <div class="container black-text " style="width: 100%;padding: 10px;margin-left:auto;margin-right:auto">
 
-        <div class="row cbg2 zDepth">
-            <div class="col s12 m6 center">
-                <div>
-                    <img src="/img/work/hog.jpg" class="responsive-img" alt="">
+            <div class="row cbg2 zDepth">
+                <div class="col s12 m6 center">
+                    <div>
+                        <img src="/img/work/hog.jpg" class="responsive-img article-img" alt="">
+                    </div>
+                    <div>
+                        <p class="mobile">I have given white car as input to my algorithm and there it is with the score
+                            of 0.92 out of 1, which is quite less but considering that it'sbeen done without any Nueral
+                            Network, 0.92 is a big success</p>
+                    </div>
+                </div>
+                <div class="col s12 m6 center">
+                    <div>
+                        <p class="mobile">
+                            Whenever we used to think of object detection we tend to think of applying
+                            approaches of Neural Networks, but it turns out to be a tough task without it. I tried some
+                            features like Edges, Contours, Color, Contrast, Brightness, etc to recognize the object, but
+                            starting from this level of searching would take a large lump sum of time if we consider
+                            scaling, orientation, luminous conditions, etc.
+                            "Object Descriptors" are one of the wonderful things I discovered while solving this
+                            problem. Object Descriptors encode the information of the object which can then be further
+                            used for comparisons. This is all that I needed.
+                           
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col s12 m6 center">
-                <div>
-                    <p class="mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit recusandae
-                        eius velit consequuntur eaque error, aliquid iste similique impedit, illo neque amet, optio
-                        adipisci nostrum expedita eos delectus odio nesciunt!</p>
+            <div class="row cbg2 zDepth">
+
+                <div class="col s12 m6 center">
+                    <div>
+                        <p class="mobile"> I tried SIFT (Scale Invariant Feature Transform),SURF (Speeded Up Robust Features) and HOG (Histogram of Oriented Gradients)
+                            for this, but HOG seems better to me. We can also use combination which compliments HOG,
+                            like LBP (Linear Binary Pattern).</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="row cbg2 zDepth">
-            <div class="col s12 m6 center">
-                <div>
-                    <p class="mobile">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta aperiam asperiores
-                        similique eligendi! Nemo commodi earum illum nostrum fugiat adipisci! Distinctio magnam corrupti
-                        in iure ipsa aliquam, quis nam consectetur!</p>
-                </div>
-            </div>
-            <div class="col s12 m6 center">
-                <div>
-                    <p class="mobile">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe deserunt itaque
-                        alias magni nostrum quasi laboriosam minus facilis, labore amet veniam. Cumque, saepe quasi?
-                        Quisquam dolorem est suscipit accusamus perferendis?</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    </main>
 
     <footer class="black page-footer load-blur">
         <div class="container">

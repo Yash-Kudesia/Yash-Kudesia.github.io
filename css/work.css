@@ -1,9 +1,22 @@
 .article-img{
     border: 2px solid teal;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 main{
     line-height: 2;
     word-spacing: 5px;
     letter-spacing: 2px;
+    background-color:initial !important;
+}
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-weight: bold;
+}
+.d-flex span{
+    margin-bottom: 10px;
+}
+body{
+    background: none !important;
 }

@@ -10,9 +10,11 @@ body {
 main {
     flex: 1 0 auto;
 }
-blockquote{
-   text-decoration: underline;
+
+blockquote {
+    text-decoration: underline;
 }
+
 .parallax {
     background-image: url('/img/fullImg.png');
     background-attachment: fixed;
@@ -21,26 +23,31 @@ blockquote{
     background-size: contain;
     background-position: right;
 }
+
 .cbackground {
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.95);
 }
-.card{
+
+.card {
     background-color: unset !important;
 }
-@media (min-width:600px){
-    .col-hover:hover{
-        background:rgb(187 135 7 / 30%)!important;
+
+@media (min-width:600px) {
+    .col-hover:hover {
+        background: rgb(187 135 7 / 30%) !important;
         transition-property: background;
-        transition-duration:  1s;
+        transition-duration: 1s;
     }
 }
+
 @media (max-width:600px) {
     .cbg2 {
-        background-color: rgb(187 135 7 / 60%);
+        /* background-color: rgb(187 135 7 / 60%); */
         color: white;
         font-weight: 600;
     }
-    .m-top{
+
+    .m-top {
         margin-top: 220px;
     }
 
@@ -163,6 +170,21 @@ footer span:hover {
     display: none;
     text-align: center;
 
+}
+
+@media (min-width:300px) {
+    main {
+        margin-top: 50px;
+    }
+
+    nav {
+        position: fixed;
+        z-index: 2;
+    }
+
+    body {
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(114, 9, 121, 1) 46%, rgba(0, 212, 255, 0) 100%);
+    }
 }
 
 @media (min-width:800px) {
